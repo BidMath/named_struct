@@ -24,8 +24,8 @@ module NamedStruct
           raise(ArgumentError, "wrong number of arguments (%d for %d)"%
                 [keys.size, required_keys.size])
         end
-        mising_keys = required_keys - keys
-        raise(ArgumentError, "missing keyword: %s"%mising_keys.join(', '))
+        missing_keys = required_keys - keys
+        raise(ArgumentError, "missing keyword: %s"%missing_keys.join(', '))
       end
       args.each{|k, v| instance_variable_set("@#{k}".to_sym, v)}
     end
