@@ -19,7 +19,7 @@ module NamedStruct
       end
       keys = args.keys
       required_keys = self.class.members
-      if keys != required_keys
+      if keys.sort != required_keys.sort
         if keys.size > required_keys.size
           raise(ArgumentError, "wrong number of arguments (%d for %d)"%
                 [keys.size, required_keys.size])

@@ -45,6 +45,13 @@ RSpec.describe NamedStruct::Config do
     end
 
     context "with keyword arguments" do
+      context "with all required arguments (random order)" do
+        subject{ MyConfig.new(b: 10, a: 11)}
+        it { is_expected.to be_kind_of(MyConfig) }
+        it { expect{ subject }.to_not raise_error }
+        it { expect(subject.a).to eq(11) }
+        it { expect(subject.b).to eq(10) }
+      end
       context "with all required arguments" do
         subject{ MyConfig.new(a: 10, b: 11)}
         it { is_expected.to be_kind_of(MyConfig) }
