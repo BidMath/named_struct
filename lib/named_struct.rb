@@ -1,5 +1,2 @@
 require "named_struct/version"
-
-module NamedStruct
-  # Your code goes here...
-end
+require "named_struct/config"
