@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "named_struct"
   spec.version       = NamedStruct::VERSION
   spec.authors       = ["Max Shytikov"]
-  spec.email         = ["mshytikov@gmail.com"]
+  spec.email         = ["mshytikov+support@gmail.com"]
   spec.summary       = %q{Simple Struct with required keyword arguments}
   spec.description   = %q{Simple Struct with required keyword arguments}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/mshytikov/named_struct"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
