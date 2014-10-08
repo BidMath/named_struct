@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = NamedStruct::VERSION
   spec.authors       = ["Max Shytikov"]
   spec.email         = ["mshytikov@gmail.com"]
-  spec.summary       = %q{Simple named Struct}
-  spec.description   = %q{Named struct for config purposes}
+  spec.summary       = %q{Simple Struct with required keyword arguments}
+  spec.description   = %q{Simple Struct with required keyword arguments}
   spec.homepage      = ""
   spec.license       = "MIT"
 
