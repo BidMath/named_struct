@@ -45,6 +45,8 @@ Or install it yourself as:
 ## Usage
 
 ```
+require 'named_struct'
+
 class MyConfig < NamedStruct::Config
    attr_required :a, :b, :c
 end
