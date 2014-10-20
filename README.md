@@ -1,4 +1,4 @@
-# NamedStruct
+# NamedStruct [![Build Status](https://travis-ci.org/mshytikov/named_struct.svg?branch=master)](https://travis-ci.org/mshytikov/named_struct)
 
 Simple object to wrap your configuration, it can be instantiated only
 with required named arguments.
