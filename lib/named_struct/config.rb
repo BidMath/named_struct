@@ -29,6 +29,10 @@ module NamedStruct
       end
       args.each{|k, v| instance_variable_set("@#{k}".to_sym, v)}
     end
+
+    def to_h
+      self.class.members.map{|k| [k, public_send(k)] }.to_h
+    end
   end
 
 end

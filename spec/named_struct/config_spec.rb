@@ -32,6 +32,11 @@ RSpec.describe NamedStruct::Config do
       it { is_expected.to be_frozen }
     end
 
+    describe '#to_h' do
+      subject{ MyConfig.new(a: 10, b: 11).to_h }
+      it { is_expected.to eq({ a: 10, b: 11 }) }
+    end
+
     context "without arguments" do
       subject{ MyConfig.new}
       let(:error_message) { "missing keyword: a, b" }
